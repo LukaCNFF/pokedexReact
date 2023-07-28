@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-image: url("../assets/pokedex/Body.jpg");
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  width: 90%;
+  padding: 16px;
+  margin: 32px;
+  display: flex;
+}
+
+.left-content,
+.right-content {
+  flex-basis: 50%;
+}
+
+.left-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 0.5fr));
+  grid-gap: 8rem;
+  margin: 20px;
+}
+
+.card {
+  width: 170px;
+  height: 220px;
+  border-radius: 1rem;
+  box-shadow: 0 0px 36px;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.right-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 0.2fr));
+  grid-gap: 3rem;
+  margin: 20px;
+  right: -10%;
+  top: 25%;
+  justify-items: end;
+  justify-content: end;
+  margin-top: 62px;
+}
+
+.abilities {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.abilities .group {
+  background-color: #b74555;
+  color: white;
+  padding: 0.5rem;
+  font-size: 16px;
+  border-radius: 8px;
+  display: flex;
+  text-transform: capitalize;
+}
+
+.abilities .group:nth-child(n + 2) {
+  margin-left: 0.5rem;
+}
+
+.base-stat {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.btn-group {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: auto;
+  background-color: transparent;
+  color: white;
+  text-align: center;
+}
+
+.btn-group button {
+  outline: none;
+  border: none;
+  width: 150px;
+  padding: 0.3rem 0;
+  margin: 1rem;
+  font-size: 17px;
+  font-weight: bold;
+  color: #1c1c1c;
+  background-color: #a9a9a9;
+  border-radius: 8px;
+}
+
+.search-filter-container {
+  position: fixed;
+  text-align: start;
+  width: 50vw;
+  margin-left: 2%;
+}
+
+.header {
+  width: 100vw;
+  position: fixed;
+  padding: 0;
+  text-align: center;
+  justify-items: center;
+}
+
+.clear-button {
+  font-family: "Montserrat";
+  font-size: 1rem;
+  line-height: 150%;
+  font-weight: 400;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.25rem 0.5rem;
+  flex-shrink: 0;
+  text-transform: capitalize;
+}
+
+.clear-button:hover {
+  cursor: pointer;
+}
+
+.filter-type {
+  background-color: rgba(222 92 50) !important;
+  margin: 8px !important;
+}
+
+.social-media {
+  position: absolute;
+  top: 10px;
+  right: 30px;
+  display: flex;
+  gap: 1rem;
+}
+.charts {
+  position: fixed;
+  margin-top: 70px;
+  z-index: 1;
+  margin-left: 142px;
+}
