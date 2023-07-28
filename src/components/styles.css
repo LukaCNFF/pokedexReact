@@ -89,6 +89,7 @@ body {
 }
 
 .btn-group button {
+  cursor: pointer;
   outline: none;
   border: none;
   width: 150px;
