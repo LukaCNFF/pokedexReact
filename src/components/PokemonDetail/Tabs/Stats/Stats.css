@@ -29,10 +29,10 @@
 }
 
 .row > strong {
-  font-weight: 500;
+  font-weight: bolder;
+  color: rgb(255, 252, 252);
   font-size: 20px;
   line-height: 22px;
-  color: rgb(124, 124, 139);
   width: 150px;
   text-align: center;
 }
