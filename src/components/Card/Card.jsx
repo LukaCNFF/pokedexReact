@@ -19,16 +19,17 @@ const Card = ({ pokemon, loading, infoPokemon }) => {
                   className="card"
                   key={item.id}
                   onClick={() => infoPokemon(item)}
-                  style={{ backgroundColor: `${color}` }}
+                  style={{ backgroundColor: `${color}`, textAlign: "center" }}
                 >
-                  <span className="card-name">#{item.id}</span>
                   <img
                     src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/${item.id}.png`}
                     height={128}
                     width={128}
                     alt=""
+                    style={{ marginBottom: "20px" }}
                   />
-                  <span className="card-name">{item.name}</span>
+                  <span className="card-name">#{item.id}</span>
+                  <span className="card-name">{"." + item.name}</span>
                 </div>
               </>
             );

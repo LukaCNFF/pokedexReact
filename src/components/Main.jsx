@@ -129,7 +129,6 @@ const Main = () => {
   };
 
   useEffect(() => {
-    console.log("AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA");
     getAllPokemonsByType();
   }, []);
 
@@ -170,9 +169,7 @@ const Main = () => {
           state.sort((a, b) => (a.id > b.id ? 1 : -1));
           return state;
         });
-      } catch (e) {
-        console.log(e);
-      }
+      } catch (e) {}
     } else {
       if (pokeData.length > 0) {
         setPokeData([]);
@@ -205,9 +202,7 @@ const Main = () => {
           }
         });
         setFiltered(true);
-      } catch (e) {
-        console.log(e);
-      }
+      } catch (e) {}
     }
   };
 
